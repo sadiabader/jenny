@@ -5,52 +5,13 @@
 
 
  <html>
- <div id="main-slider" class="slid1"> <!-- Slider -->
-              <div id="home-slider" class="owl-carousel owl-theme">
-                  <div class="item" id="zoom1"style="height:700px">
-                      <img src="images/beauty2.jpg" alt="slide-1" class="img-responsive" style="width:2000px">
-                      <div class="slider-desc">
-                          <div class="container">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <div class="slide-offers-left">
-                                          <div class="slide-offers-title"><span>SALE</span><br/>50% OFF</div>
-                                          <p>New & Fvhresh collection<br/>arraival in jenny's store</p>
-                                          <a href="" class="btn btn-blue">Shop now</a>
-                                      </div>
-                                  </div>
-                              
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item"style="height:700px">
-                      <img src="images/be.jpg"alt="slide-2" class="img-responsive">
-                      <div class="slider-desc">
-                          <div class="container">
-                              <div class="row">
-                                  <div class="col-md-6">
-                                      <div class="slide-offers-left">
-                                          <div class="slide-offers-title"><span>50% Price cut</span><br/>for online order</div>
-                                          <p>New & Fvhresh collection<br/>arraival in jenny's store</p>
-                                          <a href="" class="btn btn-blue">Shop now</a>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                       
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div> <!-- Slider -->
+ 
               
               <div class="newest" id="newest">
                   <div class="container">
                       <div class="newest-content">
                           <div class="newest-tab">
-                              <ul id="myTab" class="nav nav-tabs newest" role="tablist">
+                              <!-- <ul id="myTab" class="nav nav-tabs newest" role="tablist">
                                   <li role="presentation" class="active">
                                       <a href="feature.php" id="cat-1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="true">Feature</a>
                                   </li>
@@ -60,27 +21,27 @@
                                   <li role="presentation">
                                       <a href="cosmetics.php" role="tab" id="cat-3" data-toggle="tab" aria-controls="3">Cosmetics</a>
                                   </li>
-                              </ul>
+                              </ul> -->
                               
                               <div id="myTabContent" class="tab-content">
                                   <div role="tabpanel" class="tab-pane fade in active" id="1" aria-labelledby="cat-1">
                                       <div class="row clearfix">
                                       <?php
-                    //  $limit = 3;
-                    //  if(isset($_GET['pg'])){
+                     $limit = 3;
+                     if(isset($_GET['pg'])){
 
-                    //      $get_pg = $_GET['pg'];
-                    //  }else{
-                    //      $get_pg = 1;
-                    //  }
-                    //  $strt_point = ($get_pg - 1) * $limit;
+                         $get_pg = $_GET['pg'];
+                     }else{
+                         $get_pg = 1;
+                     }
+                     $strt_point = ($get_pg - 1) * $limit;
 
 
 
-					// $cosmeticsfetch = "SELECT * from offer_zone";
-					// $runquery = mysqli_query($connection, $cosmeticsfetch);
-					// if(mysqli_num_rows($runquery) > 0){
-					// 	while($row = mysqli_fetch_assoc($runquery)){
+					$cosmeticsfetch = "SELECT * from offer_zone";
+					$runquery = mysqli_query($connection, $cosmeticsfetch);
+					if(mysqli_num_rows($runquery) > 0){
+						while($row = mysqli_fetch_assoc($runquery)){
 							
 					?>
                                         
@@ -107,24 +68,24 @@
 													</div>
                                               </div>
                                              
-                                              <!-- <div class="product-name">
+                                              <div class="product-name">
                                                   <a href=""><?php echo $row['tittle'];?></a>
                                               </div>
                                               <div class="star-1"></div>
                                               <div class="product-price">
                                                   <span><?php echo $row['price'];?></span>
                                                   
-                                              </div>
-                                          </div> -->
-                                          <!-- <?php
-                      //  }
-                  //  }
-                    ?>  -->
-                                                   
-                                      </div>
-                                  </div>
+                                                  </div>
+                                               </div>
+                                             <?php
+                                            }
+                                         }
+                                     ?>                 
+                               </div>
+                            </div>
 
-                                  <!-- <?php
+                 <?php
+
 				$pagination = "SELECT * from offer_zone";
 				$connec_query = mysqli_query($connection, $pagination);
 				if(mysqli_num_rows($connec_query) > 0){
@@ -147,7 +108,7 @@
 					echo '</ul>';
 					 
 				}
-				?> -->
+				?> 
 
 
                                   <div role="tabpanel" class="tab-pane fade" id="2" aria-labelledby="cat-2">
@@ -173,13 +134,13 @@
                   </div>
               </div>
               
-              <div class="content-offers" style="background:url(img/slider5.jpg); background-size: cover;">
+              <div class="content-offers" style="background:url(img/c2.jpg); background-size:cover;">
                 
                   <div class="container">
                       <div class="ct-offers">
-                          <div class="ct-offers-title" style="color: white; margin-left: 80px;">Stylish Jewelery</div>
+                          <div class="ct-offers-title" style="color: white; margin-left: 80px;">Stylish Jewelery SALE </div>
                           <p style="color: white;margin-left: 80px;"></p>
-                          <a href="" class="btn btn-danger"  style="margin-left: 80px;">Discover more Product</a>
+                          <!-- <a href="" class="btn btn-danger"  style="margin-left: 80px; font-size: 20px">10 To 50% Off</a> -->
                       </div>
                   </div>
               </div>

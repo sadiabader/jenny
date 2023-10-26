@@ -11,7 +11,7 @@
                   <div class="container">
                       <div class="newest-content">
                           <div class="newest-tab">
-                              <ul id="myTab" class="nav nav-tabs newest" role="tablist">
+                              <!-- <ul id="myTab" class="nav nav-tabs newest" role="tablist">
                                   <li role="presentation" class="active">
                                       <a href="feature.php" id="cat-1" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="true">Feature</a>
                                   </li>
@@ -21,7 +21,7 @@
                                   <li role="presentation">
                                       <a href="cosmetics.php" role="tab" id="cat-3" data-toggle="tab" aria-controls="3">Cosmetics</a>
                                   </li>
-                              </ul>
+                              </ul> -->
                               
                               <div id="myTabContent" class="tab-content">
                                   <div role="tabpanel" class="tab-pane fade in active" id="1" aria-labelledby="cat-1">
