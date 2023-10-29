@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 11:17 PM
+-- Generation Time: Oct 29, 2023 at 10:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.1.17
 
@@ -55,8 +55,42 @@ CREATE TABLE `cosmetics` (
 
 INSERT INTO `cosmetics` (`id`, `title`, `image`, `price`, `status`) VALUES
 (1, 'Lipstick', 'cos1.webp', '$19', 1),
-(2, 'Red Nailpaint', 'cos2.webp', '$5', 1),
-(3, 'Blusher', 'cos3.jpg', '$6', 1);
+(2, 'Brush kit', 'cos2.jpg', '$5', 1),
+(3, 'eyeshade', 'cos4.webp', '$6', 1),
+(4, 'Lipstick', 'cos5.webp', '$10', 1),
+(5, 'Beauty kit', 'cos6.jpg', '$10', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `index`
+--
+
+CREATE TABLE `index` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `index`
+--
+
+INSERT INTO `index` (`id`, `title`, `image`, `price`, `status`) VALUES
+(1, 'Earing\r\n', 'pro1.webp', '$12', 1),
+(2, 'Earing', 'pro2.jpg', '$10', 1),
+(3, 'Earing', 'pro3.jpg', '$14', 1),
+(4, 'Cosmetics', 'pro4.jpg', '$10', 1),
+(5, 'Brush Kit', 'pro5.jpg', '$13', 1),
+(6, 'Man\'s Cleanser	', 'pro6.jpg', '$17', 1),
+(7, 'Skin Care', 'pro7.jfif', '$10', 1),
+(8, 'Skin Care', 'pro8.webp', '$19', 1),
+(9, 'Blusher', 'pro9.jpg', '$22', 1),
+(10, 'Shiner Blusher\r\n', 'pro10.jpg', '$20', 1),
+(11, 'Eyeshades', 'pro11.webp', '$10', 1),
+(12, 'Eye Shadow', 'pro12.webp', '$19', 1);
 
 -- --------------------------------------------------------
 
@@ -116,6 +150,27 @@ CREATE TABLE `offer_zone` (
   `status` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `offer_zone`
+--
+
+INSERT INTO `offer_zone` (`id`, `tittle`, `image`, `price`, `status`) VALUES
+(1, 'skin care', 'c8.jpg', '20% off', 1),
+(2, 'lipstick', 'c5.jpg', '40% off', 1),
+(3, 'brush kit', 'c6.webp', '15% off', 1),
+(4, 'cosmetic', 'c11.jpg', '50% off', 1),
+(5, 'liner & maskara', 'c12.jpg', '70% off', 1),
+(6, 'cosmetic', 'c13.jpg', '45% off', 1),
+(7, 'chain lockit', 'c15.webp', '30% off', 1),
+(8, 'jewellery set', 'c16.jpg', '40% off', 1),
+(9, 'ring', 'c19.jpg', '10% off', 1),
+(10, 'bangless', 'c18.jpg', '40% off', 1),
+(11, 'locket set', 'c4.jpg', '20% off', 1),
+(12, 'braslet', 'c20.jpg', '20% off', 1),
+(13, 'cosmetic', 'c21,webp', '50% off', 1),
+(14, 'jewellery', 'c3.webp', '50% off', 1),
+(15, 'cosmetic', 'c21.jpeg', '50% off', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -135,13 +190,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `title`, `image`, `price`, `status`) VALUES
-(1, 'neckless', 'pro1.webp', '$12', 1),
+(1, 'Earing', 'pro1.webp', '$12', 1),
 (2, 'Earing', 'pro2.jpg', '$10', 1),
 (3, 'Earing', 'pro3.jpg', '$14', 1),
 (4, 'Cosmetics', 'pro4.jpg', '$10', 1),
 (5, 'Brush Kit', 'pro5.jpg', '$13', 1),
 (6, 'Man\'s Cleanser', 'pro6.jpg', '$17', 1),
-(7, 'Skin Care', 'pro7.jfif', '$10', 1);
+(7, 'Skin Care', 'pro7.jfif', '$10', 1),
+(8, 'Skin Care', 'pro8.webp', '$19', 1),
+(9, 'Blusher', 'pro9.jpg', '$22', 1),
+(10, 'Shiner Blusher', 'pro10.jpg', '$20', 1),
+(11, 'Eyeshades', 'pro11.webp', '$10', 1),
+(12, 'Eye Shadow', 'pro12.webp', '$19', 1);
 
 -- --------------------------------------------------------
 
@@ -162,8 +222,7 @@ CREATE TABLE `user-register` (
 
 INSERT INTO `user-register` (`id`, `username`, `email`, `password`) VALUES
 (10, 'sawera ansari', 'saw@gmail.com', '$2y$10$1PzUTp2SFpp8vGWGbdsO6uJqR2H2Hb7HniEL.02u4ftCvLXJK9jf.'),
-(11, 'midhat@gmail.com', 'mid@gmail.com', '$2y$10$Ivo55pM0PdZLFT5.w5IrVOiRA.YEKy55CblzOk4.WE8NeGyKYe2Em'),
-(12, 'sidrah', 's@gmail.com', '$2y$10$it1bDxbAMc1nm1mVpu2TXesXJ55z5OUPC4rB6P5RUPxxVkOxtDGkm');
+(11, 'midhat@gmail.com', 'mid@gmail.com', '$2y$10$Ivo55pM0PdZLFT5.w5IrVOiRA.YEKy55CblzOk4.WE8NeGyKYe2Em');
 
 --
 -- Indexes for dumped tables
@@ -179,6 +238,12 @@ ALTER TABLE `admin_reg`
 -- Indexes for table `cosmetics`
 --
 ALTER TABLE `cosmetics`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `index`
+--
+ALTER TABLE `index`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -219,7 +284,13 @@ ALTER TABLE `admin_reg`
 -- AUTO_INCREMENT for table `cosmetics`
 --
 ALTER TABLE `cosmetics`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `index`
+--
+ALTER TABLE `index`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `jewellery`
@@ -231,19 +302,19 @@ ALTER TABLE `jewellery`
 -- AUTO_INCREMENT for table `offer_zone`
 --
 ALTER TABLE `offer_zone`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user-register`
 --
 ALTER TABLE `user-register`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
