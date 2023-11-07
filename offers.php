@@ -138,7 +138,7 @@
                 
                   <div class="container">
                       <div class="ct-offers">
-                          <div class="ct-offers-title" style="color: black; text-alin:left;">Stylish Jewelery SALE </div>
+                          <div class="ct-offers-title" style="color: black; margin-left: 10px;">Stylish Jewelery SALE </div>
                           <p style="color: white;margin-left: 80px;"></p>
                           <!-- <a href="" class="btn btn-danger"  style="margin-left: 80px; font-size: 20px">10 To 50% Off</a> -->
                       </div>

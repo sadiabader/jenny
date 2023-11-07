@@ -42,6 +42,15 @@ h1{
 .row .card{
     margin-left: 35px;
 }
+.card-title{
+    text-align:center;
+    margin-top:10px;
+    color: #66cef6;
+}
+.col-md-3 img:hover{
+    box-shadow: 5px 5px 30px 5px  #66cef6; 
+    hyphens: auto;
+}
 </style>
 
  </html>
@@ -142,7 +151,7 @@ h1{
       <div class="card" style="width: 18rem;">
   <img src="images/be1.avif" class="card-img-top" alt="..." height="200px" width="200px" >
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h4 class="card-title"> Cosmetic</h4>
     
   </div>
     </div>
@@ -151,9 +160,9 @@ h1{
     <!--card-2 -->
 <div class="col-md-3">
 <div class="card" style="width: 18rem;">
-  <img src="images/j15.webp" class="card-img-top" alt="..." height="200px" width="200px">
+  <img src="img/j27.jpg" class="card-img-top" alt="..." height="200px" width="200px">
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h4 class="card-title">Jewellery</h4>
     
   </div>
 </div>
@@ -164,7 +173,7 @@ h1{
 <div class="card" style="width: 18rem;">
   <img src="images/cos3.jpg" class="card-img-top" alt="..." height="200px" width="200px">
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h4 class="card-title">cosmetic</h4>
     
   </div>
 </div>
@@ -173,24 +182,24 @@ h1{
 <!--card-4 -->
 <div class="col-md-3">
 <div class="card" style="width: 18rem;">
-  <img src="images/j15.webp" class="card-img-top" alt="..." height="200px" width="200px">
+  <img src="images/cos5.jpg" class="card-img-top" alt="..." height="200px" width="200px">
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h4 class="card-title"> Cosmetics</h4>
     
   </div>
 </div>
 </div>
 
     </div>
-    </div>
+    
     
 
     <div class="row">
     <div class="col-md-3">
       <div class="card" style="width: 18rem;">
-  <img src="images/be1.avif" class="card-img-top" alt="..." height="200px" width="200px" >
+  <img src="img/j16.jpg" class="card-img-top" alt="..." height="200px" width="200px" >
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h4 class="card-title">Jewellery</h4>
     
   </div>
     </div>
@@ -199,9 +208,9 @@ h1{
     <!--card-2 -->
 <div class="col-md-3">
 <div class="card" style="width: 18rem;">
-  <img src="images/j15.webp" class="card-img-top" alt="..." height="200px" width="200px">
+  <img src="img/c7.jpg" class="card-img-top" alt="..." height="200px" width="200px">
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h4 class="card-title">Cosmetics</h4>
     
   </div>
 </div>
@@ -210,7 +219,7 @@ h1{
  <!--card-3 -->
  <div class="col-md-3">
 <div class="card" style="width: 18rem;">
-  <img src="images/cos3.jpg" class="card-img-top" alt="..." height="200px" width="200px">
+  <img src="img/cos3.jpg" class="card-img-top" alt="..." height="200px" width="200px">
   <div class="card-body">
     <h5 class="card-title"></h5>
     
@@ -221,7 +230,7 @@ h1{
 <!--card-4 -->
 <div class="col-md-3">
 <div class="card" style="width: 18rem;">
-  <img src="images/j15.webp" class="card-img-top" alt="..." height="200px" width="200px">
+  <img src="img/j15.webp" class="card-img-top" alt="..." height="200px" width="200px">
   <div class="card-body">
     <h5 class="card-title"></h5>
     
@@ -230,8 +239,7 @@ h1{
 </div>
 
     </div>
-    </div>
-    </div>
+   
                               <br>
                               <br>
                               <a href="products.php" class="btn btn-blue" style="width:300px; ">Discover more Product</a>
